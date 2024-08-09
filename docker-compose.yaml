@@ -41,7 +41,7 @@ services:
       - ./config.monitoring
     networks:
       sahil-network:
-      ipv4_address: 172.16.238.12
+        ipv4_address: 172.16.238.12
 
   network:
     sahil-network:
