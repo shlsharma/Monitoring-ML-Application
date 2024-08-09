@@ -19,9 +19,9 @@ WORKDIR /code/src
 
 ENV PYTHONPATH "${PYTHONPATH}./code/src"
 
-CMD pip install -e .
+RUN pip install -e .
 
-CMD ["python", "prediction_model/training_pipeline.py"]
+RUN python ./prediction_model/training_pipeline.py
 
 WORKDIR /code
 
