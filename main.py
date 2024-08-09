@@ -48,7 +48,7 @@ def index():
 @app.post("/prediction_api")
 def predict(loan_details: LoanPrediction):
     data = loan_details.model_dump()
-    prediction = generate_predictions([data])["prediction"][0]
+    prediction = generate_predictions([data])["predictions"][0]
     if prediction == "Y":
         pred = "Approved"
     else:
@@ -76,7 +76,7 @@ def predict_gui(Gender: str,
        'Loan_Amount_Term', 'Credit_History', 'Property_Area']
     
     data_dict = dict(zip(cols,input_data))
-    prediction = generate_predictions([data_dict])["prediction"][0]
+    prediction = generate_predictions([data_dict])["predictions"][0]
     if prediction == "Y":
         pred = "Approved"
     else:
