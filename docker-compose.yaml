@@ -43,10 +43,10 @@ services:
       sahil-network:
         ipv4_address: 172.16.238.12
 
-  networks:
-    sahil-network:
-      driver: bridge
-      ipam:
-        driver: default
-        config:
-          - subnet: 172.16.238.0/24
+networks:
+  sahil-network:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.16.238.0/24
