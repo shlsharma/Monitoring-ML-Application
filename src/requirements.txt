@@ -10,5 +10,5 @@ pytest==7.4.2
 fastapi==0.103.0
 pydantic==2.4.2
 uvicorn==0.23.2
-guicorn==21.2.0
+gunicorn==21.2.0
 prometheus-fastapi-instrumentor==6.1.0
